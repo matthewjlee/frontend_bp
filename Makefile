@@ -5,4 +5,4 @@ build:
 	npm run build
 
 make serve:
-	npm run start
+	npm run start	
