@@ -12,7 +12,7 @@ module.exports = {
                 use: ['babel-loader']
             },
             {
-                test: /\.css$/,
+                test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
             {
@@ -38,7 +38,8 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['*', '.js', '.jsx']
+        extensions: ['*', '.js', '.jsx'],
+        modules: [path.resolve(__dirname, '../'), 'node_modules']
     },
     output: {
         path: path.resolve(__dirname, '../', 'dist'),
